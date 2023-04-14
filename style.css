@@ -143,7 +143,7 @@ body header {
   flex-direction: column;
   text-align: center;
   width: 375px;
-  margin: 20px;
+  margin: 20px 20px;
 }
 body header .header_div {
   display: flex;
