@@ -1,0 +1,262 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  margin: auto;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 375px;
+  margin: 20px;
+}
+body header .header_div {
+  display: flex;
+  justify-content: space-evenly;
+}
+body header .header_div .header_div_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px 10px 10px 40px;
+}
+body header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 15px 40px 10px 10px;
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.container_card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 600px;
+  margin: 0px 0px 30px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: flex-start;
+  line-height: 20px;
+  box-shadow: 1px 9px 20px 0px black;
+  transition: height 0.5s ease-out;
+  transition: display 0.5s ease-out;
+}
+.container_card:hover {
+  box-shadow: 1px 9px 20px 0px rgb(121, 121, 121);
+}
+.container_card:hover img {
+  height: 400px;
+}
+.container_card:hover .button {
+  display: block;
+}
+.container_card .button {
+  display: none;
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-top: 20px;
+}
+.container_card .button img.trash {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.container_card img {
+  width: 350px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 10px;
+  transition: height 0.5s ease-out;
+}
+.container_card span {
+  width: 350px;
+  margin-left: 10px;
+  width: 340px;
+}
+.container_card span.genredufilm {
+  display: flex;
+  background-color: rgb(139, 50, 50);
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  justify-content: center;
+  background-size: contain;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 1px 5px;
+}
+.container_card .titre_film {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    width: 1440px;
+  }
+  body header {
+    width: 1440px;
+  }
+  body header .header_div {
+    justify-content: center;
+  }
+  body header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 35px 40px 10px 10px;
+  }
+  .container {
+    flex-direction: row;
+    width: 1440px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container_card {
+    margin: 15px 5px 15px 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
